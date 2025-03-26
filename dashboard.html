@@ -1,0 +1,24 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Member Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body onload="loadDashboard()">
+    <div class="dashboard-container">
+        <h2>Welcome, <span id="fullName"></span></h2>
+        <p><strong>Membership ID:</strong> <span id="membershipId"></span></p>
+        <p><strong>Date of Membership:</strong> <span id="dateOfMembership"></span></p>
+        <p><strong>Capital Share:</strong> ₱<span id="capitalShare"></span></p>
+
+        <h3>Loan Status</h3>
+        <p id="loanStatus"></p>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+</body>
+</html>
