@@ -17,9 +17,28 @@
         <p><a href="forgot-password.html">Forgot Password?</a></p>
         <p id="error-msg" style="color: red;"></p>
     </div>
-  <!-- Load Supabase first -->
+
+    <!--
+    <!-- Load Supabase first -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <!-- Then load script.js -->
     <script src="script.js"></script>
+    -->
+
+    
+<!-- Load Supabase first -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Wait until Supabase is loaded before running script.js -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("Supabase is ready!");
+        const script = document.createElement("script");
+        script.src = "script.js";
+        document.body.appendChild(script);
+    });
+</script>
+
+    
 </body>
 </html>
