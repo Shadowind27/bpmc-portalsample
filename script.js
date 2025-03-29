@@ -1,7 +1,9 @@
 // Initialize Supabase
 const supabaseUrl = "https://kwffxhmmauoeconqfrgy.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3ZmZ4aG1tYXVvZWNvbnFmcmd5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI5OTU4NDgsImV4cCI6MjA1ODU3MTg0OH0.u4smcDvKrz-nPMXPVzhdD4mPYT1WYuA2JGB_97mzJtI";
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+console.log("Supabase Initialized:",supabase);
 
 // Login Function
 async function login() {
